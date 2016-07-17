@@ -1,7 +1,7 @@
 About audioread
 ===============
 
-Home: https://github.com/sampsyo/audioread
+Home: https://github.com/beetbox/audioread
 
 Package license: MIT
 

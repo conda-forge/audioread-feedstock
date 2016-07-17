@@ -28,7 +28,7 @@ test:
     - audioread
 
 about:
-  home: https://github.com/sampsyo/audioread
+  home: https://github.com/beetbox/audioread
   license: MIT
   summary: 'multi-library, cross-platform audio decoding'
 
