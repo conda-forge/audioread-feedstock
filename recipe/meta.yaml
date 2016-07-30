@@ -12,7 +12,7 @@ source:
   {{ hash_type }}: {{ hash_val }}
 
 build:
-  number: 0
+  number: 1
   script: python setup.py install # This package uses distutils, no egg magic necessary
 
 requirements:
@@ -28,7 +28,7 @@ test:
     - audioread
 
 about:
-  home: https://github.com/sampsyo/audioread
+  home: https://github.com/beetbox/audioread
   license: MIT
   summary: 'multi-library, cross-platform audio decoding'
 
