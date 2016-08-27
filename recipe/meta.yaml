@@ -12,7 +12,7 @@ source:
   {{ hash_type }}: {{ hash_val }}
 
 build:
-  number: 1
+  number: 2
   script: python setup.py install # This package uses distutils, no egg magic necessary
 
 requirements:
@@ -21,7 +21,7 @@ requirements:
 
   run:
     - python
-    - ffmpeg  # [not win]
+    - ffmpeg 2.8.*  # [not win]
 
 test:
   imports:
