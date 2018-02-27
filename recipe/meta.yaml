@@ -1,6 +1,6 @@
 {% set version = "2.1.5" %}
 {% set hash_type = "md5" %}
-{% set hash_val = "8151d336c48ee2bc03fbcba5840a3fe4" %}
+{% set hash_val = "36c3b118f097c58ba073b7d040c4319eff200756f094295677567e256282d0d7" %}
 
 package:
   name: audioread
