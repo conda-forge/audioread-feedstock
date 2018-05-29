@@ -1,6 +1,6 @@
-{% set version = "2.1.4" %}
+{% set version = "2.1.6" %}
 {% set hash_type = "md5" %}
-{% set hash_val = "8151d336c48ee2bc03fbcba5840a3fe4" %}
+{% set hash_val = "14eb3cceb61e07c8b44ed49a06236766" %}
 
 package:
   name: audioread
@@ -12,7 +12,7 @@ source:
   {{ hash_type }}: {{ hash_val }}
 
 build:
-  number: 2
+  number: 0
   script: python setup.py install # This package uses distutils, no egg magic necessary
 
 requirements:
