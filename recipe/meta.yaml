@@ -21,7 +21,7 @@ requirements:
 
   run:
     - python
-    - ffmpeg 2.8.*  # [not win]
+    - ffmpeg  # [not win]
 
 test:
   imports:
@@ -36,3 +36,4 @@ extra:
   recipe-maintainers:
     - bmcfee
     - sampsyo
+    - zhiruiwang
