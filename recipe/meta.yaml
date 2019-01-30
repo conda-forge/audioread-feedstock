@@ -14,9 +14,8 @@ build:
   script: "python -m pip install . --no-deps -vv"
 
 requirements:
-  build:
+  host:
     - python
-
   run:
     - python
     - ffmpeg  # [not win]
