@@ -1,6 +1,4 @@
-{% set version = "2.1.5" %}
-{% set hash_type = "md5" %}
-{% set hash_val = "89b8775e47e2f9c171db148b7c5b699b" %}
+{% set version = "2.1.6" %}
 
 package:
   name: audioread
@@ -9,19 +7,19 @@ package:
 source:
   fn: audioread-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/a/audioread/audioread-{{ version }}.tar.gz
-  {{ hash_type }}: {{ hash_val }}
+  sha256: b0b9270c20833a75ce0d167fb2fdad52ddcd8e8f300be8afad3ac9715850bc50
 
 build:
-  number: 1000
-  script: python setup.py install # This package uses distutils, no egg magic necessary
+  number: 0
+  script: "python -m pip install . --no-deps -vv"
 
 requirements:
-  build:
+  host:
     - python
-
+    - pip
   run:
     - python
-    - ffmpeg 2.8.*  # [not win]
+    - ffmpeg  # [not win]
 
 test:
   imports:
@@ -30,9 +28,12 @@ test:
 about:
   home: https://github.com/beetbox/audioread
   license: MIT
+  license_family: MIT
+  license_file: LICENSE
   summary: 'multi-library, cross-platform audio decoding'
 
 extra:
   recipe-maintainers:
     - bmcfee
     - sampsyo
+    - scopatz
