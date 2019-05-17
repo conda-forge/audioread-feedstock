@@ -1,4 +1,4 @@
-{% set version = "2.1.6" %}
+{% set version = "2.1.7" %}
 
 package:
   name: audioread
@@ -7,7 +7,7 @@ package:
 source:
   fn: audioread-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/a/audioread/audioread-{{ version }}.tar.gz
-  sha256: b0b9270c20833a75ce0d167fb2fdad52ddcd8e8f300be8afad3ac9715850bc50
+  sha256: f488f9e6fa1ccb09289e3db194639bc6388168b27ef27b2c62380aa1d35a3abe
 
 build:
   number: 0
