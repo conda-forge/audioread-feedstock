@@ -22,6 +22,9 @@ requirements:
     - ffmpeg  # [not win]
 
 test:
+  requires:
+    - pytest
+    - pytest-runner
   imports:
     - audioread
 
