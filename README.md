@@ -198,6 +198,7 @@ Feedstock Maintainers
 =====================
 
 * [@bmcfee](https://github.com/bmcfee/)
+* [@mfansler](https://github.com/mfansler/)
 * [@sampsyo](https://github.com/sampsyo/)
 * [@scopatz](https://github.com/scopatz/)
 

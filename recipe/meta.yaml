@@ -1,4 +1,4 @@
-{% set version = "2.1.6" %}
+{% set version = "2.1.8" %}
 
 package:
   name: audioread
@@ -7,7 +7,7 @@ package:
 source:
   fn: audioread-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/a/audioread/audioread-{{ version }}.tar.gz
-  sha256: b0b9270c20833a75ce0d167fb2fdad52ddcd8e8f300be8afad3ac9715850bc50
+  sha256: 073904fabc842881e07bd3e4a5776623535562f70b1655b635d22886168dd168
 
 build:
   number: 1
@@ -17,11 +17,15 @@ requirements:
   host:
     - python
     - pip
+    - pytest-runner
   run:
     - python
     - ffmpeg  # [not win]
 
 test:
+  requires:
+    - pytest
+    - pytest-runner
   imports:
     - audioread
 
@@ -37,3 +41,4 @@ extra:
     - bmcfee
     - sampsyo
     - scopatz
+    - mfansler
