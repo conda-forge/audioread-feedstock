@@ -10,7 +10,7 @@ source:
   sha256: a3480e42056c8e80a8192a54f6729a280ef66d27782ee11cbd63e9d4d1523089
 
 build:
-  number: 1
+  number: 2
   script: python -m pip install . --no-deps -vv
 
 requirements:
@@ -20,7 +20,6 @@ requirements:
   host:
     - python
     - pip
-    - pytest-runner
   run:
     - python
     - ffmpeg  # [not win]
