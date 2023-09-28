@@ -1,4 +1,4 @@
-{% set version = "3.0.0" %}
+{% set version = "3.0.1" %}
 
 package:
   name: audioread
@@ -7,11 +7,11 @@ package:
 source:
   fn: audioread-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/a/audioread/audioread-{{ version }}.tar.gz
-  sha256: 121995bd207eb1fda3d566beb851d3534275925bc35a4fb6da0cb11de0f7251a
+  sha256: ac5460a5498c48bdf2e8e767402583a4dcd13f4414d286f42ce4379e8b35066d
 
 build:
-  number: 1
-  script: python -m pip install . --no-deps -vv
+  number: 0
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   build:
@@ -19,6 +19,7 @@ requirements:
     - cross-python_{{ target_platform }}     # [build_platform != target_platform]
   host:
     - python
+    - flit-core >=3.2,<4
     - pip
   run:
     - python
