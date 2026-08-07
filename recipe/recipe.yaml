@@ -38,12 +38,12 @@ tests:
   - python:
       imports:
         - audioread
-      pip_check: false
+      pip_check: true
 
 about:
+  summary: Multi-library, cross-platform audio decoding.
   license: MIT
   license_file: LICENSE
-  summary: multi-library, cross-platform audio decoding
   homepage: https://github.com/beetbox/audioread
 
 extra:
@@ -52,3 +52,4 @@ extra:
     - sampsyo
     - scopatz
     - mfansler
+    - mgorny
